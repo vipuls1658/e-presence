@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/navbar.css">
+    <link rel="stylesheet" href="./stylesheets/section.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#section1">Benifit</a></li>
+            <li><a href="#section2">Feature</a></li>
+            <li><a href="#section3">Getting Started</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <h1>Moto</h1>
+    </section>
+    <section id=section1>
+        <h1>Benifits</h1>
+    </section>
+    <section id="section2">
+        <h1>Feature</h1>
+    </section>
+    <section id="section3">
+        <h1>Getting started</h1>
+    </section>
+    <section id="footer">
+        <h1>Footer</h1>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
